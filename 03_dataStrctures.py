@@ -23,3 +23,15 @@ a.sort(reverse=True)
 print 'sort descend', a
 mypop=a.pop()
 print 'mypop', mypop
+#This is a queue
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])
+print 'queue', queue
+queue.append("Terry")           # Terry arrives
+queue.append("Graham")          # Graham arrives
+mypop=queue.popleft()                 # The first to arrive now leaves
+print 'mypop', mypop
+mypop=queue.popleft()                 # The second to arrive now leaves
+print 'mypop', mypop
+print 'queue', queue
+# Remaining queue in order of arrival
