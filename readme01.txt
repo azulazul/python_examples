@@ -6,7 +6,8 @@ To install tensorflow in opensuse 42.3
 3. Install libcupti-dev
 4. Download tensorflow with cuda support (check the version of python )
 5. Make a directory for tensorflow
-6. Run
+6. sudo apt-get install python-pip python-dev
+7. Run
    sudo pip install tensorflow-gpu
 
 
