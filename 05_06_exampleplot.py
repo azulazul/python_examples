@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib
-atplotlib.use("gtk")
+matplotlib.use("gtk")
 #matplotlib.use("GTKAgg")
 import matplotlib.pyplot as plt
 import matplotlib.cbook as cbook
