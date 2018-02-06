@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
+# declaring utf8 encoding
 # Example taken from EdoVaira/Iris-Neural-Network
 # Dependencies
+import os
 import tensorflow as tf
 import pandas as pd
 import numpy as np
@@ -32,6 +35,8 @@ y_test = y_values[-test_size:]
 y_train = y_values[:-test_size]
 
 # Session
+# if you want to disable one cuda device then
+# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 sess = tf.Session()
 
 # Interval / Epochs
@@ -77,4 +82,4 @@ for i in range(1, (epoch + 1)):
 # Prediction
 print()
 for i in range(len(X_test)):
-    print('Actual:', y_test[i], 'Predicted:', np.rint(sess.run(final_output, feed_dict={X_data: [X_test[i]]})))
+    print 'Actual:', y_test[i], 'Predicted:', np.rint(sess.run(final_output, feed_dict={X_data: [X_test[i]]}))
